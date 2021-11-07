@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.iudigital.autoscolombia.modelo</OriginalElement>
+  <nodes>
+    <node x="603.3693181818182" y="2276.0">com.iudigital.autoscolombia.modelo.TipoMovimiento</node>
+    <node x="490.0269886363637" y="706.0">com.iudigital.autoscolombia.modelo.Usuario</node>
+    <node x="736.0" y="0.0">com.iudigital.autoscolombia.modelo.MedioPago</node>
+    <node x="359.2571022727273" y="317.0">com.iudigital.autoscolombia.modelo.TipoUsuario</node>
+    <node x="278.12500000000006" y="1530.0">com.iudigital.autoscolombia.modelo.Contrato</node>
+    <node x="560.3693181818182" y="1948.0">com.iudigital.autoscolombia.modelo.Movimiento</node>
+    <node x="672.0" y="284.0">com.iudigital.autoscolombia.modelo.PagosContrato</node>
+    <node x="283.0269886363637" y="1210.0">com.iudigital.autoscolombia.modelo.Celda</node>
+    <node x="784.5269886363637" y="1166.0">com.iudigital.autoscolombia.modelo.Vehiculo</node>
+    <node x="1108.0" y="284.0">com.iudigital.autoscolombia.modelo.Tercero</node>
+    <node x="1163.0269886363637" y="761.0">com.iudigital.autoscolombia.modelo.Novedades</node>
+    <node x="31.75" y="328.0">com.iudigital.autoscolombia.modelo.Estado</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.TipoUsuario" relationship="DEPENDENCY">
+      <point x="-163.25" y="-183.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="833.75" y="685.0" />
+      <point x="833.75" y="625.0" />
+      <point x="422.5071022727273" y="625.0" />
+      <point x="-63.25" y="117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.TipoUsuario" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="DEPENDENCY">
+      <point x="-63.25" y="117.0" />
+      <point x="422.5071022727273" y="625.0" />
+      <point x="833.75" y="625.0" />
+      <point x="833.75" y="685.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="-163.25" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="TO_MANY">
+      <point x="163.25" y="183.0" />
+      <point x="979.7769886363637" y="1094.0" />
+      <point x="1230.6519886363637" y="1094.0" />
+      <point x="1230.6519886363637" y="1104.0" />
+      <point x="1562.5269886363637" y="1104.0" />
+      <point x="1562.5269886363637" y="1917.0" />
+      <point x="895.75" y="1917.0" />
+      <point x="895.75" y="1927.0" />
+      <point x="846.1193181818182" y="1927.0" />
+      <point x="95.25" y="-139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.MedioPago" relationship="TO_ONE">
+      <point x="104.0" y="-150.0" />
+      <point x="984.0" y="259.0" />
+      <point x="952.0" y="259.0" />
+      <point x="72.0" y="117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Tercero" relationship="DEPENDENCY">
+      <point x="-163.25" y="-183.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="833.75" y="685.0" />
+      <point x="833.75" y="625.0" />
+      <point x="1189.75" y="625.0" />
+      <point x="-81.75" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.TipoMovimiento" relationship="DEPENDENCY">
+      <point x="-95.25" y="139.0" />
+      <point x="655.6193181818182" y="2251.0" />
+      <point x="677.1193181818182" y="2251.0" />
+      <point x="-73.75" y="-117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.TipoMovimiento" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="DEPENDENCY">
+      <point x="-73.75" y="-117.0" />
+      <point x="677.1193181818182" y="2251.0" />
+      <point x="655.6193181818182" y="2251.0" />
+      <point x="-95.25" y="139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="TO_ONE">
+      <point x="158.0" y="-183.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="1230.6519886363637" y="1488.0" />
+      <point x="1230.6519886363637" y="1094.0" />
+      <point x="979.7769886363637" y="1094.0" />
+      <point x="163.25" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.TipoMovimiento" relationship="TO_ONE">
+      <point x="95.25" y="139.0" />
+      <point x="846.1193181818182" y="2251.0" />
+      <point x="824.6193181818182" y="2251.0" />
+      <point x="73.75" y="-117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="TO_ONE">
+      <point x="158.0" y="-183.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="1078.5269886363637" y="1488.0" />
+      <point x="98.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.TipoUsuario" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="TO_MANY">
+      <point x="63.25" y="117.0" />
+      <point x="549.0071022727273" y="615.0" />
+      <point x="855.0" y="615.0" />
+      <point x="855.0" y="685.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="163.25" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Novedades" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="DEPENDENCY">
+      <point x="-70.0" y="128.0" />
+      <point x="1233.0269886363637" y="1124.0" />
+      <point x="1012.6448863636365" y="1124.0" />
+      <point x="1012.6448863636365" y="1144.0" />
+      <point x="882.5269886363637" y="1144.0" />
+      <point x="-98.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Vehiculo" target="com.iudigital.autoscolombia.modelo.Novedades" relationship="DEPENDENCY">
+      <point x="-98.0" y="-150.0" />
+      <point x="882.5269886363637" y="1144.0" />
+      <point x="1012.6448863636365" y="1144.0" />
+      <point x="1012.6448863636365" y="1124.0" />
+      <point x="1233.0269886363637" y="1124.0" />
+      <point x="-70.0" y="128.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="DEPENDENCY">
+      <point x="-95.25" y="-139.0" />
+      <point x="655.6193181818182" y="1927.0" />
+      <point x="449.24431818181824" y="1927.0" />
+      <point x="449.24431818181824" y="1917.0" />
+      <point x="0.0" y="1917.0" />
+      <point x="0.0" y="1144.0" />
+      <point x="272.5269886363637" y="1144.0" />
+      <point x="272.5269886363637" y="1104.0" />
+      <point x="653.2769886363637" y="1104.0" />
+      <point x="-163.25" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.MedioPago" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="TO_MANY">
+      <point x="72.0" y="117.0" />
+      <point x="952.0" y="259.0" />
+      <point x="984.0" y="259.0" />
+      <point x="104.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="DEPENDENCY">
+      <point x="-163.25" y="183.0" />
+      <point x="653.2769886363637" y="1104.0" />
+      <point x="272.5269886363637" y="1104.0" />
+      <point x="272.5269886363637" y="1144.0" />
+      <point x="0.0" y="1144.0" />
+      <point x="0.0" y="1917.0" />
+      <point x="449.24431818181824" y="1917.0" />
+      <point x="449.24431818181824" y="1927.0" />
+      <point x="655.6193181818182" y="1927.0" />
+      <point x="-95.25" y="-139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.TipoMovimiento" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="TO_MANY">
+      <point x="73.75" y="-117.0" />
+      <point x="824.6193181818182" y="2251.0" />
+      <point x="846.1193181818182" y="2251.0" />
+      <point x="95.25" y="139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="TO_ONE">
+      <point x="95.25" y="-139.0" />
+      <point x="846.1193181818182" y="1927.0" />
+      <point x="895.75" y="1927.0" />
+      <point x="895.75" y="1917.0" />
+      <point x="1562.5269886363637" y="1917.0" />
+      <point x="1562.5269886363637" y="1104.0" />
+      <point x="1230.6519886363637" y="1104.0" />
+      <point x="1230.6519886363637" y="1094.0" />
+      <point x="979.7769886363637" y="1094.0" />
+      <point x="163.25" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Estado" relationship="TO_ONE">
+      <point x="158.0" y="-183.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="479.5269886363637" y="1488.0" />
+      <point x="479.5269886363637" y="645.0" />
+      <point x="171.25" y="645.0" />
+      <point x="46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="DEPENDENCY">
+      <point x="-158.0" y="-183.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="272.5269886363637" y="1498.0" />
+      <point x="272.5269886363637" y="1104.0" />
+      <point x="653.2769886363637" y="1104.0" />
+      <point x="-163.25" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.MedioPago" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="DEPENDENCY">
+      <point x="-72.0" y="117.0" />
+      <point x="808.0" y="259.0" />
+      <point x="776.0" y="259.0" />
+      <point x="-104.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.MedioPago" relationship="DEPENDENCY">
+      <point x="-104.0" y="-150.0" />
+      <point x="776.0" y="259.0" />
+      <point x="808.0" y="259.0" />
+      <point x="-72.0" y="117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="TO_ONE">
+      <point x="104.0" y="150.0" />
+      <point x="984.0" y="605.0" />
+      <point x="1472.7769886363637" y="605.0" />
+      <point x="1472.7769886363637" y="675.0" />
+      <point x="855.0" y="675.0" />
+      <point x="855.0" y="685.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="163.25" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Celda" relationship="DEPENDENCY">
+      <point x="-158.0" y="-183.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="329.5269886363637" y="1498.0" />
+      <point x="-46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Celda" relationship="TO_ONE">
+      <point x="158.0" y="-183.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="422.5269886363637" y="1488.0" />
+      <point x="46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="DEPENDENCY">
+      <point x="-158.0" y="183.0" />
+      <point x="436.12500000000006" y="1917.0" />
+      <point x="449.24431818181824" y="1917.0" />
+      <point x="449.24431818181824" y="1927.0" />
+      <point x="655.6193181818182" y="1927.0" />
+      <point x="-95.25" y="-139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.Contrato" relationship="DEPENDENCY">
+      <point x="-95.25" y="-139.0" />
+      <point x="655.6193181818182" y="1927.0" />
+      <point x="449.24431818181824" y="1927.0" />
+      <point x="449.24431818181824" y="1917.0" />
+      <point x="436.12500000000006" y="1917.0" />
+      <point x="-158.0" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="DEPENDENCY">
+      <point x="-104.0" y="150.0" />
+      <point x="776.0" y="635.0" />
+      <point x="262.0269886363637" y="635.0" />
+      <point x="262.0269886363637" y="665.0" />
+      <point x="833.75" y="665.0" />
+      <point x="833.75" y="685.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="-163.25" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="DEPENDENCY">
+      <point x="-163.25" y="-183.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="833.75" y="685.0" />
+      <point x="833.75" y="665.0" />
+      <point x="262.0269886363637" y="665.0" />
+      <point x="262.0269886363637" y="635.0" />
+      <point x="776.0" y="635.0" />
+      <point x="-104.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Vehiculo" target="com.iudigital.autoscolombia.modelo.Novedades" relationship="TO_MANY">
+      <point x="98.0" y="-150.0" />
+      <point x="1078.5269886363637" y="1144.0" />
+      <point x="1022.6448863636365" y="1144.0" />
+      <point x="1022.6448863636365" y="1134.0" />
+      <point x="1373.0269886363637" y="1134.0" />
+      <point x="70.0" y="128.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="DEPENDENCY">
+      <point x="-158.0" y="-183.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="882.5269886363637" y="1498.0" />
+      <point x="-98.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="TO_MANY">
+      <point x="163.25" y="-183.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="855.0" y="685.0" />
+      <point x="855.0" y="675.0" />
+      <point x="1472.7769886363637" y="675.0" />
+      <point x="1472.7769886363637" y="605.0" />
+      <point x="984.0" y="605.0" />
+      <point x="104.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Novedades" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="TO_ONE">
+      <point x="70.0" y="128.0" />
+      <point x="1373.0269886363637" y="1134.0" />
+      <point x="1022.6448863636365" y="1134.0" />
+      <point x="1022.6448863636365" y="1144.0" />
+      <point x="1078.5269886363637" y="1144.0" />
+      <point x="98.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Estado" relationship="DEPENDENCY">
+      <point x="-158.0" y="-183.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="11.0" y="1498.0" />
+      <point x="11.0" y="665.0" />
+      <point x="78.25" y="665.0" />
+      <point x="-46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Vehiculo" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="TO_ONE">
+      <point x="98.0" y="-150.0" />
+      <point x="1078.5269886363637" y="1144.0" />
+      <point x="1022.6448863636365" y="1144.0" />
+      <point x="1022.6448863636365" y="1114.0" />
+      <point x="1230.6519886363637" y="1114.0" />
+      <point x="1230.6519886363637" y="1094.0" />
+      <point x="979.7769886363637" y="1094.0" />
+      <point x="163.25" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Tercero" relationship="TO_ONE">
+      <point x="163.25" y="-183.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="855.0" y="685.0" />
+      <point x="855.0" y="615.0" />
+      <point x="1353.25" y="615.0" />
+      <point x="81.75" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="TO_MANY">
+      <point x="163.25" y="183.0" />
+      <point x="979.7769886363637" y="1094.0" />
+      <point x="1230.6519886363637" y="1094.0" />
+      <point x="1230.6519886363637" y="1114.0" />
+      <point x="1022.6448863636365" y="1114.0" />
+      <point x="1022.6448863636365" y="1144.0" />
+      <point x="1078.5269886363637" y="1144.0" />
+      <point x="98.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.Contrato" relationship="DEPENDENCY">
+      <point x="-104.0" y="150.0" />
+      <point x="776.0" y="635.0" />
+      <point x="262.0269886363637" y="635.0" />
+      <point x="262.0269886363637" y="1498.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="-158.0" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="DEPENDENCY">
+      <point x="-158.0" y="-183.0" />
+      <point x="436.12500000000006" y="1508.0" />
+      <point x="332.2769886363637" y="1508.0" />
+      <point x="332.2769886363637" y="1498.0" />
+      <point x="262.0269886363637" y="1498.0" />
+      <point x="262.0269886363637" y="635.0" />
+      <point x="776.0" y="635.0" />
+      <point x="-104.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.TipoUsuario" relationship="TO_ONE">
+      <point x="163.25" y="-183.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="855.0" y="685.0" />
+      <point x="855.0" y="615.0" />
+      <point x="549.0071022727273" y="615.0" />
+      <point x="63.25" y="117.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Estado" relationship="DEPENDENCY">
+      <point x="-163.25" y="-183.0" />
+      <point x="653.2769886363637" y="685.0" />
+      <point x="833.75" y="685.0" />
+      <point x="833.75" y="675.0" />
+      <point x="11.0" y="675.0" />
+      <point x="11.0" y="665.0" />
+      <point x="78.25" y="665.0" />
+      <point x="-46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.PagosContrato" relationship="TO_MANY">
+      <point x="158.0" y="-183.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="1472.7769886363637" y="1488.0" />
+      <point x="1472.7769886363637" y="605.0" />
+      <point x="984.0" y="605.0" />
+      <point x="104.0" y="150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Contrato" target="com.iudigital.autoscolombia.modelo.Movimiento" relationship="TO_MANY">
+      <point x="158.0" y="183.0" />
+      <point x="752.125" y="1917.0" />
+      <point x="895.75" y="1917.0" />
+      <point x="895.75" y="1927.0" />
+      <point x="846.1193181818182" y="1927.0" />
+      <point x="95.25" y="-139.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.PagosContrato" target="com.iudigital.autoscolombia.modelo.Contrato" relationship="TO_ONE">
+      <point x="104.0" y="150.0" />
+      <point x="984.0" y="605.0" />
+      <point x="1472.7769886363637" y="605.0" />
+      <point x="1472.7769886363637" y="1488.0" />
+      <point x="1082.1448863636365" y="1488.0" />
+      <point x="1082.1448863636365" y="1508.0" />
+      <point x="752.125" y="1508.0" />
+      <point x="158.0" y="-183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Movimiento" target="com.iudigital.autoscolombia.modelo.Contrato" relationship="TO_ONE">
+      <point x="95.25" y="-139.0" />
+      <point x="846.1193181818182" y="1927.0" />
+      <point x="895.75" y="1927.0" />
+      <point x="895.75" y="1917.0" />
+      <point x="752.125" y="1917.0" />
+      <point x="158.0" y="183.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Estado" relationship="TO_ONE">
+      <point x="163.25" y="-183.0" />
+      <point x="979.7769886363637" y="685.0" />
+      <point x="855.0" y="685.0" />
+      <point x="855.0" y="655.0" />
+      <point x="479.5269886363637" y="655.0" />
+      <point x="479.5269886363637" y="645.0" />
+      <point x="171.25" y="645.0" />
+      <point x="46.5" y="106.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Usuario" target="com.iudigital.autoscolombia.modelo.Vehiculo" relationship="DEPENDENCY">
+      <point x="-163.25" y="183.0" />
+      <point x="653.2769886363637" y="1104.0" />
+      <point x="272.5269886363637" y="1104.0" />
+      <point x="272.5269886363637" y="1114.0" />
+      <point x="1012.6448863636365" y="1114.0" />
+      <point x="1012.6448863636365" y="1144.0" />
+      <point x="882.5269886363637" y="1144.0" />
+      <point x="-98.0" y="-150.0" />
+    </edge>
+    <edge source="com.iudigital.autoscolombia.modelo.Vehiculo" target="com.iudigital.autoscolombia.modelo.Usuario" relationship="DEPENDENCY">
+      <point x="-98.0" y="-150.0" />
+      <point x="882.5269886363637" y="1144.0" />
+      <point x="1012.6448863636365" y="1144.0" />
+      <point x="1012.6448863636365" y="1114.0" />
+      <point x="272.5269886363637" y="1114.0" />
+      <point x="272.5269886363637" y="1104.0" />
+      <point x="653.2769886363637" y="1104.0" />
+      <point x="-163.25" y="183.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.34980237154150196" showDependencies="true" x="781.5" y="1255.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
